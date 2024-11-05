@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import './Deck.css'
 import Square from "./Square/Square";
 import Button from "../UI/Button/Button";
+import Counter from "../Counter/Counter";
 
-function Deck(props) {
+function Deck() {
     const [gameTrue, setGameTrue] = useState(true)
     const [squareArray, setSquareArray] = useState([])
     const [toggleValue, setToggleValue] = useState(false)
@@ -84,6 +85,11 @@ function Deck(props) {
             </div>
             <Button
                 click={fillArraySquare}
+            />
+            <Counter
+                amount={backgroundNone}
+                array={squareArray}
+                value='gray'
             />
         </div>
     )
