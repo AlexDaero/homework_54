@@ -1,0 +1,11 @@
+.deck{
+    margin: 20px auto;
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    width: 680px;
+    gap: 5px;
+    height: 680px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
